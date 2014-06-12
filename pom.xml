@@ -470,7 +470,7 @@
        <version>2.2</version>
        <configuration>
          <outputDirectory>deployments</outputDirectory>
-         <warName>ROOT.war</warName>
+         <warName>ROOT</warName>
        </configuration>
      </plugin>
    </plugins>
