@@ -442,15 +442,16 @@
 					</descriptorRefs>
 				</configuration>
 			</plugin>
-	
-			 <plugin>
-       <artifactId>maven-war-plugin</artifactId>
-       <version>2.2</version>
-       <configuration>
-         <outputDirectory>deployments</outputDirectory>
-         <warName>ROOT</warName>
-       </configuration>
-     </plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<server>tomcat-development-server</server>
+					<port>9966</port>
+					<path>/petclinic</path>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -469,7 +470,7 @@
        <version>2.2</version>
        <configuration>
          <outputDirectory>deployments</outputDirectory>
-         <warName>ROOT</warName>
+         <warName>ROOT.war</warName>
        </configuration>
      </plugin>
    </plugins>
