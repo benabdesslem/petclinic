@@ -15,6 +15,7 @@
     - When the media type is 'text/html', it will delegate to the InternalResourceViewResolver's JstlView, 
     - otherwise to the BeanNameViewResolver.
     -->
+    	
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
         <property name="contentNegotiationManager" ref="cnManager"/>
         

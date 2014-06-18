@@ -15,12 +15,20 @@
          http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
          http://www.springframework.org/schema/jee
          http://www.springframework.org/schema/jee/spring-jee.xsd">
+         
+         
+         
+         
 
     <!-- ========================= DATASOURCE DEFINITION ========================= -->
 
     <!-- Configurer that replaces ${...} placeholders with values from a properties file -->
     <!-- (in this case, JDBC-related settings for the dataSource definition below) -->
     <context:property-placeholder location="classpath:spring/data-access.properties" system-properties-mode="OVERRIDE"/>
+
+
+
+
 
     <!-- DataSource configuration for the tomcat jdbc connection pool 
     See here for more details on commons-dbcp versus tomcat-jdbc: 
